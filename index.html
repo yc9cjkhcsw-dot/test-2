@@ -32,12 +32,13 @@
       { text: "«Что разум человека может постигнуть и во что он может поверить, того он способен достичь».", author: "Наполеон Хилл" }
       { text: "«Сложнее всего начать действовать, все остальное зависит только от упорства».", author: "Амелия Эрхарт" }
     ];
-feat: add interactive quote generator
+    
     function getRandomQuote() {
       const index = Math.floor(Math.random() * quotes.length);
       document.getElementById('quote-display').innerText = quotes[index].text;
       document.getElementById('author-display').innerText = "— " + quotes[index].author;
     }
   </script>
+  feat: add interactive quote generator.
 </body>
 </html>
